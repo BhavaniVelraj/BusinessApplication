@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@ui5/cli": "^3.8.0"
+  },
+  "name": "grid-container",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ui5 serve -o index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

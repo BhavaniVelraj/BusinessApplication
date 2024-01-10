@@ -1,0 +1,114 @@
+{
+  "_version": "1.58.0",
+  "sap.app": {
+    "id": "ui5.walkthrough",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+     "dataSources": {
+          "materialRemote": {
+                   "uri": "/com.klazp.rad.web/MyODataRAD.svc/",
+                   "type": "OData",
+                   "settings": {
+                     "odataVersion": "2.0"
+                    }
+          }
+       } 
+      
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+        "desktop": true,
+        "tablet": true,
+        "phone": true
+    }
+
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.108.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ui5.walkthrough.i18n.i18n",
+          "supportedLocales": [""],
+          "fallbackLocale": ""
+        }
+      },
+        "materialRemote": {
+                   "dataSource": "materialRemote",
+                   "preload": true,
+                    "settings":{"useBatch":false}
+                  }
+
+     
+  },
+    "rootView": {
+        "viewName": "ui5.walkthrough.view.App",
+        "type": "XML",
+        "id": "app"
+    },
+    "resources": {
+      "css": [
+      {
+        "uri": "css/bussi.css"
+      }
+      ]
+    },
+    "routing": {
+      "config": {
+          "routerClass": "sap.m.routing.Router",
+          "type": "View",
+          "viewType": "XML",
+          "path": "ui5.walkthrough.view",
+          "controlId": "app",
+          "controlAggregation": "pages"
+        },
+        "routes": [
+       
+          {
+            "pattern": "materialview",
+            "name": "materialview",
+            "target": "materialview"
+          },
+          {
+            "pattern": "matdetailview/{itemIndex}",
+            "name": "matdetailview",
+            "target": "matdetailview"
+          },
+          {
+            "pattern": "addmatview",
+            "name": "addmatview",
+            "target": "addmatview"
+          }
+      ],
+      "targets": {
+        
+          "materialview": {
+            "id": "materialview",
+            "name": "MaterialView"
+          },
+          "matdetailview": {
+            "id": "matdetailview",
+            "name": "matDetailView"
+          },
+          "addmatview": {
+            "id": "addmatview",
+            "name": "addMatView"
+          }
+        }
+    }
+    
+  }
+}

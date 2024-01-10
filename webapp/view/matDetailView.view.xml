@@ -1,0 +1,7 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.matDetailView"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+    <Page id="matDetailpage" showHeader="false"></Page>
+	
+</mvc:View>

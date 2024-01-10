@@ -1,0 +1,24 @@
+<mvc:View
+   controllerName="ui5.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+
+		<App id="app">
+			<pages>
+				<Page showHeader="false">
+					<content>
+					        <!-- Main Page Call -->
+					    <mvc:XMLView viewName="ui5.walkthrough.view.TileView" height="100%"/>
+					    <!-- <mvc:XMLView viewName="ui5.walkthrough.view.MaterialView" height="100%"/> -->
+					    <!-- <mvc:XMLView viewName="ui5.walkthrough.view.matDetailView" height="100%"/> -->
+
+
+					</content>
+						
+					
+					
+				</Page>
+			</pages>
+		</App>
+
+</mvc:View>

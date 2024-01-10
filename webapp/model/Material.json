@@ -1,0 +1,25 @@
+{
+    "Materials": [
+      {
+        "materialid": "01",
+        "materialdescription":"vehicle that has wheels",
+        "vendormaterial": "10001USD",
+        "vendordescription": "Soy Wax",
+        "UoM":"Pieces",
+        "AltUoM":"Box"
+
+      },
+      {
+        "materialid": "02",
+        "materialdescription":"somethig vechicle",
+        "vendormaterial": "10002USD",
+        "vendordescription": "Soyy Wax",
+        "UoM":"Pieces",
+        "AltUoM":"Box"
+      }
+    ],
+    "counts":{
+      "total":"2"
+    }
+  }
+       
